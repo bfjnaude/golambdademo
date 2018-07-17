@@ -10,7 +10,7 @@ phases:
     commands:
       # AWS Codebuild Go images use /go for the $GOPATCH so copy the application source code into that directory structure
       - mkdir -p "/go/src/$(dirname ${PACKAGE})"
-      - ln -s "${CODE_BUILD_SRC_DIR}" "/go/src/${PACKAGE}"
+      - ln -s "${CODEBUILD_SRC_DIR}" "/go/src/${PACKAGE}"
       # Print all environment variables for logging 
       - env
       # Install golint
