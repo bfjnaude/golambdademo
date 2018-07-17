@@ -36,6 +36,6 @@ phases:
       # Package the application with AWS SAM
       - aws cloudformation package --template-file tempalte.yml --s3-bucket ${S3_BUCKET} --output-template-file packaged.yml 
   
-  artifacts:
-    files:
-    - packaged.yml
+artifacts:
+  files:
+  - packaged.yml
