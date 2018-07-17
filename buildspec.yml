@@ -3,7 +3,7 @@ version: 0.2
 env:
   variables:
     S3_BUCKET: "arn:aws:s3:::helloworldlambda-eu-west-1"
-    PACKAGE: "github.com/uafrica/golambdademo"
+    PACKAGE: "github.com/bfjnaude/golambdademo"
   
 phases:
   install:
